@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "ab425ac1-3df3-4321-93df-62f863afc2e7",
+		"name": "animal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalType\": \"DOG\",\r\n    \"animalStatus\": \"AVAILABLE\",\r\n    \"breed\": \"cavalier\",\r\n    \"dateOfBirth\":[\r\n            2022,\r\n            1,\r\n            1,\r\n            10,\r\n            24\r\n        ],\r\n        \"breederName\": \"Bob\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/animals",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add animal bad name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalType\": \"DOG\",\r\n    \"animalStatus\": \"AVAILABLE\",\r\n    \"breed\": \"cavalier\",\r\n    \"dateOfBirth\":[\r\n            2022,\r\n            1,\r\n            1,\r\n            10,\r\n            24\r\n        ],\r\n        \"breederName\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/animals",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add animal oldie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalType\": \"DOG\",\r\n    \"animalStatus\": \"AVAILABLE\",\r\n    \"breed\": \"cavalier\",\r\n    \"dateOfBirth\":[\r\n            2000,\r\n            1,\r\n            1,\r\n            10,\r\n            24\r\n        ],\r\n        \"breederName\": \"Bob\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/animals",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"komolcia@gmail.com\",\r\n    \"password\": \"Password1!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/authorization/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"authorization",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"komolcia@gmail.com\",\r\n    \"password\": \"Password1!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/lauthorization/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"lauthorization",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

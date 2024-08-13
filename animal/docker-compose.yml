@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:14.4
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    networks:
+      - animals-network
+networks:
+  animals-network:
+    name: animals-network
+    driver: bridge

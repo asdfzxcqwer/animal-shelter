@@ -1,0 +1,176 @@
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.contact {
+    width: 80vw;
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+.contact_box {
+    width: 37vw;
+    margin-top: 2h;
+  
+}
+
+.contact_text {
+    clear: both;
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 1vw;
+
+}
+
+.contact_title {
+    margin-left: 1.5vw;
+    font-weight: bold;
+}
+
+.contact_information {}
+
+.contact_data {
+    margin-left: 1.7vw;
+}
+
+.map {}
+
+.icon_2 {
+    width: 3vw;
+    height: 3vw;
+}
+.zdj{
+    width: 30vw;
+    border-radius: 50%;
+    float: left;
+}
+
+.pageTitle_aboutUs {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-weight: bold;
+}
+.beginning_aboutUs{
+    width: 75vw;
+    height: 60vh;
+    margin: auto;
+}
+.field_aboutUs{
+    width: 42vw;
+    float: left;
+    margin-left: 1.6vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+.text_aboutUs{
+    width: 42vw;
+    margin: auto;
+    font-size: 1.35rem;
+    margin-top: 8vh;
+}
+.text_help{
+    width: 80vw;
+    text-align: center;
+    margin-top: 8vh;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+/*
+.animal_row {
+    background-color: white;
+    margin-top: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#first_row {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #f9ecbd;
+}
+
+.animalField {
+    width: 14vw;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price_amount {
+    float: left;
+    text-align: right;
+    margin-right: 0.3vw;
+}
+
+.action {
+    float: left;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 0.5vw;
+}
+
+#actions_txt {
+    width: 8vw;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#delete {
+    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 0 0;
+    transition-delay: 3s;
+}
+
+.pageTitle {
+    width: 50vw;
+    margin-left: 14vw;
+    float: left;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #FFF;
+
+    font-weight: bold;
+}
+
+.head {
+    padding: 20px 0 20px 0;
+    width: 80vw;
+    margin: auto;
+    height: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.addButton {
+    display: flex;
+    justify-content: center;
+    width: 12vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    background: linear-gradient(to left, #f46b45, #eea849);
+    color: #FFF;
+    text-decoration: none;
+}
+
+Link {
+    color: #FFF;
+}
+*/

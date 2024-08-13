@@ -1,0 +1,17 @@
+.feedback {
+    width: 400px;
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 0.75rem;
+}
+
+#center_add_animal {
+    min-height: 500px;
+    transform: translate(-50%, -45%);
+}
+
+.center h1 {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid silver;
+}

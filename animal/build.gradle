@@ -1,0 +1,44 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.4'
+	id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+	id 'java'
+}
+
+group = 'ug.edu'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.paypal.sdk:rest-api-sdk:1.14.0'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.0-rc2'
+	implementation 'com.rabbitmq:amqp-client'
+	compileOnly 'org.projectlombok:lombok'
+	compileOnly 'javax:javaee-api:8.0.1'
+	implementation 'org.springframework.amqp:spring-rabbit:2.4.7'
+	implementation 'com.stripe:stripe-java:21.13.0-beta.1'
+	implementation 'net.javacrumbs.shedlock:shedlock-spring:0.5.0'
+	implementation 'com.auth0:java-jwt:2.0.1'
+	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'io.rest-assured', name: 'rest-assured'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
