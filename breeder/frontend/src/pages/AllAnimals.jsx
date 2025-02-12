@@ -2,8 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Select from 'react-select';
-import AppPagination from '../pages/AppPagination';
-import AnimalRow from '../pages/AnimalRow';
+import AppPagination from './AppPagination';
+import AnimalRow from './AnimalRow';
 import './Register.css'
 import './List.css'
 import { Link, useNavigate } from "react-router-dom";
